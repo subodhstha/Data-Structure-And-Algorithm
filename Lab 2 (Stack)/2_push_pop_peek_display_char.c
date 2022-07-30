@@ -52,7 +52,7 @@ void push(char s[])
 	}
 	else{
 		printf("Enter the value that you want to push in the stack\n");
-		scanf("%c",&v);
+		gets(v);
 		top = top + 1;
 		s[top] = v;
 	}
