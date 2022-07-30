@@ -1,12 +1,16 @@
-// Write a program to create and perform push, pop, peek and display operation on as tack with integer data.
+// Write a program to create and perform push, pop, peek and display
+// operation on a stack with character data.
 
+// error
 #include<stdio.h>
+#include<string.h>
 #define MAX 10
-int stack[MAX], top = -1;
-void push(int s[]);
-void pop(int s[]);
-void peek(int s[]);
-void display(int s[]);
+char stack[MAX];
+int top = -1;
+void push(char s[]);
+void pop(char s[]);
+void peek(char s[]);
+void display(char s[]);
 
 int main()
 {
@@ -39,49 +43,48 @@ int main()
 	} while (option > 0 && option < 5);
 }
 
-void push(int s[])
+void push(char s[])
 {
-	int v;
-	if (top == MAX -1 )
+	char v;
+	if (top == MAX - 1 )
 	{
 		printf("Overflow");		
 	}
 	else{
 		printf("Enter the value that you want to push in the stack\n");
-		scanf("%d",&v);
+		scanf("%c",&v);
 		top = top + 1;
 		s[top] = v;
 	}
 }
-void pop(int s[])
+void pop(char s[])
 {
-	int v;
+	char v;
 	if (top == -1)
 	{
 		printf("Underflow");
 	}
 	else{
 		v = s[top];
-		printf("The value popped is %d\n",v);
+		printf("The value popped is %c\n",v);
 		top = top - 1;
 	}
 }
-void peek(int s[])
+void peek(char s[])
 {
 	if (top == -1)
 	{
 		printf("Underflow");
 	}
 	else{
-		printf("The value at top is %d\n",s[top]);
+		printf("The value at top is %c\n",s[top]);
 	}
 }
-void display(int s[])
+void display(char s[])
 {
-	int i;
 	printf("All stack elements are \n");
 	for (int i = top; i >= 0; i--)
 	{
-		printf("%d \n",s[i]);
+		printf("%c \n",s[i]);
 	}
 }
