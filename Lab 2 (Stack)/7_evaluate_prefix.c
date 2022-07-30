@@ -1,6 +1,5 @@
 // Write a program to evaluate a prefix expression
 
-// error
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
@@ -63,7 +62,7 @@ int pop()
 
 int get_type(char c)
 {
-    if (c == '+' || c == '-' || c == '/')
+    if (c == '+' || c == '-' || c == '*'  || c == '/')
     {
         return 1;
     }
