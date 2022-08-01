@@ -1,4 +1,4 @@
-/* Write a program to find the sum  and Average of the array elements.
+/* Write a program to find the sum and Average of the array elements.
 Note:  use the malloc( ) function to dynamically allocate the memory for array elements.*/
 
 #include<stdio.h>
@@ -23,6 +23,6 @@ int main()
     }
     ave = (float)sum/n;
     printf("The sum of the element in array is %d\n",sum);
-    printf("The average of the element array is %0.2f",ave);
+    printf("The average of the element in array is %0.2f",ave);
     return(0);
 }

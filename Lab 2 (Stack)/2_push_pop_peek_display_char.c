@@ -1,7 +1,6 @@
 // Write a program to create and perform push, pop, peek and display
 // operation on a stack with character data.
 
-// error
 #include<stdio.h>
 #include<string.h>
 #define MAX 10
@@ -28,7 +27,7 @@ int main()
 		switch (option)
 		{
 		case 1:
-		push(stack);
+			push(stack);
 			break;
 		case 2:
 			pop(stack);

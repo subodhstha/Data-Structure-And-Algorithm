@@ -24,7 +24,7 @@ int main()
 		switch (option)
 		{
 		case 1:
-		push(stack);
+			push(stack);
 			break;
 		case 2:
 			pop(stack);
