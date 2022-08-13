@@ -21,5 +21,5 @@ void move(int n, char source, char dest, char spare)
         move(n-1, source, spare, dest);
         move(1, source, dest, spare);
         move(n-1, spare, dest, source);
-   ace }
+    }
 }
