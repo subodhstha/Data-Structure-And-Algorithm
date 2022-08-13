@@ -1,4 +1,4 @@
-// Write a recursive program to find the Fibonacciseries for the input numbern.
+// Write a recursive program to find the Fibonacci series for the input number.
 #include<stdio.h>
 int fibonacci(int);
 int main()
