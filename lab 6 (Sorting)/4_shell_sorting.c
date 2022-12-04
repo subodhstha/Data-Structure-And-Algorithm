@@ -41,9 +41,7 @@ void shellSort(int *arr,int *size)
                 {
                     swap(&arr[i],&arr[i+gap]);
                 }
-                
             }
         }
     }
-    
 }

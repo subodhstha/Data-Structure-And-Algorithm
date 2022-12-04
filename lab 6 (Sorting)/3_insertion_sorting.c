@@ -4,7 +4,7 @@
 void InsertionSort(int *arr,int *size);
 int main()
 {
-    printf("-----SELECTION SORT--------\n");
+    printf("-----INSERTION SORT--------\n");
     int size, *arr;
     printf("\nEnter size of array\n");
     scanf("%d",&size);

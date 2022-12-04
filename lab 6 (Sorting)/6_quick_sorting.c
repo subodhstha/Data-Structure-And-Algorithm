@@ -5,7 +5,7 @@
 void quickSort(int *arr,int f,int l);
 int main()
 {
-    printf("-----Quick SORT--------\n");
+    printf("-----QUICK SORT--------\n");
     int size, *arr;
     printf("\nEnter size of array\n");
     scanf("%d",&size);
@@ -26,6 +26,7 @@ int main()
         printf("%d  ",arr[i]);
     }
 }
+
 void swap(int *first,int *second)
 {
     int temp;
@@ -33,6 +34,7 @@ void swap(int *first,int *second)
     *first=*second;
     *second=temp;
 }
+
 int partition(int *arr,int l, int r)
 {
     int pivot = arr[r];
@@ -47,7 +49,8 @@ int partition(int *arr,int l, int r)
     }
     swap(&arr[i+1],&arr[r]);
     return (i+1);
-};
+}
+
 void quickSort(int *arr,int l,int r)
 {
     if(l<r)
