@@ -24,19 +24,19 @@ int main ()
         {        
             /*function calls of all the operations */ 
             case 1:  
-            insert_last();      
-            break;
+                insert_last();      
+                break;
             case 2:  
-            delete_last();        
-            break;
+                delete_last();        
+                break;
             case 3:
-            print(); 
-            break; 
+                print(); 
+                break; 
             case 4:  
-            exit(0);
-            break;  
+                exit(0);
+                break;  
             default:  
-            printf("Enter valid option");  
+                printf("Enter valid option");  
         }  
     }  
     return 0;

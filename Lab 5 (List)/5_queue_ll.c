@@ -57,9 +57,8 @@ void delete()
 
 int main()
 {
- system("clear");
     int ch=0;  
-    while(ch!=8)   
+    while(ch!=3)   
     {    
         printf("\nEnter the operation to be performed\n");    
         printf("\n1.Push\n2.Delete\n3.Exit\n");         
@@ -67,16 +66,16 @@ int main()
         switch(ch)  
         {
             case 1:  
-            Insert();       
-            break;  
+                Insert();       
+                break;  
             case 2:  
-            delete();         
-            break;  
+                delete();         
+                break;  
             case 3: 
-            exit(0);  
-            break;
+                exit(0);  
+                break;
             default:  
-            printf("Enter valid option");  
+                printf("Enter valid option");  
         }  
     }  
     return 0;

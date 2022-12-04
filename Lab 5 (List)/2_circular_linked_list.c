@@ -105,7 +105,6 @@ void delete_last()
 //to print the values in the linked list
 void print()
 {  
-    system("clear");
     struct node *p;  
     p=start;
     if(p==NULL)  
